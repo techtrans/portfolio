@@ -1,29 +1,58 @@
 <!DOCTYPE html>
-<html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
     <head>
-        <title>T3 - Transforming Technology</title>
+    	
+  		<title>T3 - Transforming Technology</title>
+    	
+    	<!--Importing foundation framework-->
+    	<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<script src="js/vendor/modernizr.js"></script>
+  		
+	    <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+	    <link rel="stylesheet" href="framework/foundation-5.1.1/css/normalize.css">
+	    <link rel="stylesheet" href="framework/foundation-5.1.1/css/foundation.css">
+	
         <!-- portfolio style sheet -->
         <link rel="stylesheet" href="style.css" />
+        
         <!-- Importing fullpage.js -->
-        <link rel="stylesheet" type="text/css" href="framework/fullPage.js/jquery.fullPage.css" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>    
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>   
+         
         <!-- This following line needed in the case of setting the plugin option `scrollOverflow` to `true` -->
         <script type="text/javascript" src="framework/fullPage.js/vendors/jquery.slimscroll.min.js"></script>
         <script type="text/javascript" src="framework/fullPage.js/jquery.fullPage.js"></script>
         <script type="text/javascript" src="js/fullpage_configurations.js"></script>
     </head> 
     <body>
+    
     <!-- Section 1 -->
+    
     <div class="section active" id="section0">
-    	<h1>Section</h1>
-    	<div id="header"></div>
-    	<div id="img1"></div>
-    	<ul id="myMenu">
-    		<li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
-    		<li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
-    		<li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
-		</ul>
+<div class="off-canvas-wrap">
+  <div class="inner-wrap">
+
+    <a class="left-off-canvas-toggle" >Menu</a> 
+
+    <!-- Off Canvas Menu -->
+    <aside class="left-off-canvas-menu">
+        <!-- whatever you want goes here -->
+        <ul>
+          <li><a href="#">Item 1</a></li>
+        ...
+        </ul>
+    </aside>
+
+    <!-- main content goes here -->
+    <p>Set in the year 0 F.E. ("Foundation Era"), The Psychohistorians opens on Trantor, the capital of the 12,000-year-old Galactic Empire. Though the empire appears stable and powerful, it is slowly decaying in ways that parallel the decline of the Western Roman Empire. Hari Seldon, a mathematician and psychologist, has developed psychohistory, a new field of science and psychology that equates all possibilities in large societies to mathematics, allowing for the prediction of future events.</p>
+
+  <!-- close the off-canvas menu -->
+  <a class="exit-off-canvas"></a>
+
+  </div>
+</div>
     </div>
     
     <!-- Section 3 -->
@@ -35,5 +64,9 @@
     <div class="section" id="section3">
     	<h1>Looks good</h1>
     </div> 
+    
+     <script src="framework/foundation-5.1.1/js/vendor/jquery.js"></script>
+	 <script src="framework/foundation-5.1.1/js/foundation.min.js"></script>
+
     </body>
 </html>
