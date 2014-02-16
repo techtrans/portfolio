@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="js/jquery.js"></script>
+        <script src="js/uikit.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="fullPage.js/jquery.fullPage.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>    
+        <!-- This following line needed in the case of setting the plugin option `scrollOverflow` to `true` -->
+        <script type="text/javascript" src="fullPage.js/vendors/jquery.slimscroll.min.js"></script>
+        <script type="text/javascript" src="fullPage.js/jquery.fullPage.js"></script>
+        
+        <script type="text/javascript">
+		$(document).ready(function() {
+			$.fn.fullpage({
+				verticalCentered: true,
+				resize : true,
+				slidesColor : ['#03F', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+				anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+				scrollingSpeed: 700,
+				easing: 'easeInQuart',
+				menu: '#myMenu',
+				navigation: false,
+				navigationPosition: 'right',
+				navigationTooltips: ['firstSlide', 'secondSlide'],
+				slidesNavigation: true,
+				slidesNavPosition: 'bottom',
+				loopBottom: false,
+				loopTop: false,
+				loopHorizontal: true,
+				autoScrolling: false,
+				scrollOverflow: false,
+				css3: false,
+				paddingTop: '3em',
+				paddingBottom: '10px',
+				fixedElements: '#element1, .element2',
+				normalScrollElements: '#element1, .element2',
+				keyboardScrolling: true,
+				touchSensitivity: 15,
+				continuousVertical: false,
+				animateAnchor: true,
+		
+				//events
+				onLeave: function(index, direction){},
+				afterLoad: function(anchorLink, index){},
+				afterRender: function(){},
+				afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+				onSlideLeave: function(anchorLink, index, slideIndex, direction){}
+			});
+		});
+	</script>
+    </head>
+    <body>
+    <div class="section active" id="section0">
+    <h1>Section</h1>
+    <div id="img1"></div>
+    <ul id="myMenu">
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+    <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
+	</ul>
+    </div>
+    
+    <div class="section" id="section2">
+    <h1>Just testing it</h1>
+    </div>
+    
+    <div class="section" id="section3">
+    <h1>Looks good</h1>
+    </div>
+    
+    <footer>
+    </footer>
+    </body>
+</html>
