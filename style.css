@@ -17,3 +17,75 @@
 	background:url(img/sprite_ui1.png) no-repeat;
 	background-position: -168px;
 }
+
+
+#navbar {
+    border-bottom: 1px solid red;
+    background: #ddd;
+    width: 100%;
+    top: 0;
+    position: fixed;
+}
+
+#navbar li {
+    padding: 10px;
+    float: left;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #000;
+}
+
+#navbar .active a {
+    color: red;
+}
+
+/* Remove this if you want to try $('body').scrollspy(); */
+#content {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px; 
+            border-radius: 10px; 
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}

@@ -20,52 +20,32 @@
        	<!-- Bootstrap -->
     	<link href="framework/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
         <script src="framework/bootstrap/js/bootstrap.min.js"></script>
+        
     
     </head> 
     
-    <body>
-    
-
-    <!-- Section 1 -->
+	<body>
+  
+  	<ul id="menu">
+        <li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+        <li data-menuanchor="thirdPage"><a href="#thirdPage">Third slide</a></li>
+        <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth slide</a></li>
+	</ul>
+    <!-- Section 1 -->        
     <div class="section active" id="section0">
-		<button class="btn btn-large" type="button">Large button</button>
-        <div class="accordion" id="accordion2">
-  <div class="accordion-group">
-    <div class="accordion-heading">
-      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-        Collapsible Group Item #1
-      </a>
-    </div>
-    <div id="collapseOne" class="accordion-body collapse in">
-      <div class="accordion-inner">
-        Anim pariatur cliche...
-      </div>
-    </div>
-  </div>
-  <div class="accordion-group">
-    <div class="accordion-heading">
-      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-        Collapsible Group Item #2
-      </a>
-    </div>
-    <div id="collapseTwo" class="accordion-body collapse">
-      <div class="accordion-inner">
-        Anim pariatur cliche...
-      </div>
-    </div>
-  </div>
-</div>
+	
    	</div>
 
     <!-- Section 3 -->
     <div class="section" id="section2">
-    	<h1>Just testing it</h1>
+        
     </div>
     
     <!-- Section 3 -->
     <div class="section" id="section3">
-    	<h1>Looks good</h1>
     </div> 
-
+	</div>
+<script type="text/javascript">$('#navbar').scrollspy()</script>
     </body>
 </html>
