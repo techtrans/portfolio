@@ -21,17 +21,28 @@
     	<link href="framework/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
         <script src="framework/bootstrap/js/bootstrap.min.js"></script>
         
-    
+    	<!-- google fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+        
     </head> 
     
 	<body>
-  
-  	<ul id="menu">
-        <li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
-        <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
-        <li data-menuanchor="thirdPage"><a href="#thirdPage">Third slide</a></li>
-        <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth slide</a></li>
-	</ul>
+  	
+    <!-- Top navigation -->
+    <ul id="menu">
+     
+        <div id="left"> 
+        	    <li data-menuanchor="firstPage"><a href="#firstPage">About	</a></li>
+        		<li data-menuanchor="secondPage"><a href="#secondPage">Services</a></li>   
+        </div>
+        
+        <img id="logo" src="img/Logo1.jpg"/>
+        
+        <div id="right">
+            	<li data-menuanchor="thirdPage"><a href="#thirdPage">Our Work</a></li>
+        		<li data-menuanchor="fourthPage"><a href="#fourthPage">Find Us</a></li>
+        </div>
+    </ul>
     <!-- Section 1 -->        
     <div class="section active" id="section0">
 		<img id="mac" src="img/mac.png" alt="main background" />
