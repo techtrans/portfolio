@@ -1,7 +1,11 @@
 ACTIVE_HYPERLINK_COLOR=84,143,160
 ACTIVE_THEME=Aptana Studio
 HYPERLINK_COLOR=84,143,160
+<<<<<<< HEAD
 THEME_CHANGED=1392771703048
+=======
+THEME_CHANGED=1392681711001
+>>>>>>> 9353f36ed9a131aea9d69542702bd15cf3b5a104
 eclipse.preferences.version=1
 hyperlinkColor=84,143,160
 hyperlinkColor.SystemDefault=false
