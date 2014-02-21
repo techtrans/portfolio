@@ -38,6 +38,7 @@ h1, #pixels{
 	font-size-adjust:0.40;
 	font-weight:700;
 	font-style:normal;
+	color: white;
 }
 
 h2{
@@ -67,15 +68,9 @@ h2{
 	text-align: center;
 }
 
-#nav{
-	list-style: none;
-	position: fixed;
-	right: 20px;
-}
 
-#nav li{
-	margin: 0 0 15px 0;	
-}
+
+
 
 #header, #intro, #second{
 	width: 100%;
@@ -116,10 +111,11 @@ h2{
 }
 
 #fifth{
-	background: #ccc;
+	background: url(images/map.png) 50% 0 no-repeat fixed;
 	height: 400px;
 	margin: 0 auto;
 	padding: 40px 0 0 0;
+	overflow: hidden;
 }
 
 .story{
@@ -134,3 +130,20 @@ h2{
 	position: relative;
 	width: 350px;	
 }
+
+.navbar-fixed-top {height:50px;
+				   opacity:.8;} 
+
+
+#message {font-size:50px;
+		 color:white;
+		 text-align: center;
+		 margin-top:400px;
+		 background:black;
+		 opacity:.8;}
+
+.down {position:relative;
+	   margin:0 auto;
+	   width:61px;
+	   height:62px;
+	   margin-top: 100px; }

@@ -762,3 +762,172 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/kumasaru
 
 !ENTRY org.eclipse.core.net 1 0 2014-02-18 20:03:29.192
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2014-02-19 06:41:57.290 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-02-19 06:43:07.909
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.aptana.git.core 4 0 2014-02-19 06:43:26.955
+!MESSAGE (Build 3.3.2.201302081546) [ERROR] com.aptana.git.core/debug Error 2 : The system cannot find the file specified. : C:\Users\Pavithra\Documents\portfolio\portfolio\.git\refs\heads
+!STACK 0
+net.contentobjects.jnotify.win32.JNotifyException_win32: Error 2 : The system cannot find the file specified. : C:\Users\Pavithra\Documents\portfolio\portfolio\.git\refs\heads
+	at net.contentobjects.jnotify.win32.JNotify_win32.addWatch(JNotify_win32.java:77)
+	at net.contentobjects.jnotify.win32.JNotifyAdapterWin32.addWatch(JNotifyAdapterWin32.java:62)
+	at com.aptana.filewatcher.FileWatcher.addWatch(FileWatcher.java:65)
+	at com.aptana.git.core.model.GitRepository.<init>(GitRepository.java:398)
+	at com.aptana.git.core.model.GitRepositoryManager.getUnattachedExisting(GitRepositoryManager.java:194)
+	at com.aptana.git.core.model.GitRepositoryManager.getAttached(GitRepositoryManager.java:160)
+	at com.aptana.git.core.model.GitRepositoryManager.addListenerToEachRepository(GitRepositoryManager.java:272)
+	at com.aptana.git.core.GitPlugin$1.run(GitPlugin.java:78)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.aptana.git.core 4 0 2014-02-19 06:43:26.965
+!MESSAGE (Build 3.3.2.201302081546) [ERROR] com.aptana.git.core/debug C:\Users\Pavithra\Documents\portfolio\portfolio\.git\config (The system cannot find the file specified)
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Pavithra\Documents\portfolio\portfolio\.git\config (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.aptana.git.core.model.GitRepository.configContents(GitRepository.java:1289)
+	at com.aptana.git.core.model.GitRepository.remoteTrackingBranch(GitRepository.java:1227)
+	at com.aptana.git.core.model.GitRepository.matchingRemoteBranch(GitRepository.java:1178)
+	at com.aptana.git.core.model.GitRepository.commitsAhead(GitRepository.java:1159)
+	at com.aptana.git.ui.internal.GitLightweightDecorator.decorateProject(GitLightweightDecorator.java:249)
+	at com.aptana.git.ui.internal.GitLightweightDecorator.decorate(GitLightweightDecorator.java:123)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:81)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:347)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:370)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:330)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.aptana.git.core 4 0 2014-02-19 06:43:27.587
+!MESSAGE (Build 3.3.2.201302081546) [ERROR] com.aptana.git.core/debug C:\Users\Pavithra\Documents\portfolio\portfolio\.git\config (The system cannot find the file specified)
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Pavithra\Documents\portfolio\portfolio\.git\config (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.aptana.git.core.model.GitRepository.configContents(GitRepository.java:1289)
+	at com.aptana.git.core.model.GitRepository.remoteTrackingBranch(GitRepository.java:1227)
+	at com.aptana.git.core.model.GitRepository.matchingRemoteBranch(GitRepository.java:1178)
+	at com.aptana.git.core.model.GitRepository.commitsBehind(GitRepository.java:1205)
+	at com.aptana.git.ui.internal.GitLightweightDecorator.decorateProject(GitLightweightDecorator.java:258)
+	at com.aptana.git.ui.internal.GitLightweightDecorator.decorate(GitLightweightDecorator.java:123)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:81)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:347)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:370)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:330)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.aptana.git.core 4 0 2014-02-19 06:44:18.887
+!MESSAGE (Build 3.3.2.201302081546) [ERROR] com.aptana.git.core/debug C:\Users\Pavithra\Documents\portfolio\portfolio\.git\config (The system cannot find the file specified)
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Pavithra\Documents\portfolio\portfolio\.git\config (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.aptana.git.core.model.GitRepository.configContents(GitRepository.java:1289)
+	at com.aptana.git.core.model.GitRepository.remoteTrackingBranch(GitRepository.java:1227)
+	at com.aptana.git.core.model.GitRepository.matchingRemoteBranch(GitRepository.java:1178)
+	at com.aptana.git.core.model.GitRepository.commitsAhead(GitRepository.java:1159)
+	at com.aptana.git.ui.internal.GitLightweightDecorator.decorateProject(GitLightweightDecorator.java:249)
+	at com.aptana.git.ui.internal.GitLightweightDecorator.decorate(GitLightweightDecorator.java:123)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:81)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:347)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:370)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:330)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.aptana.git.core 4 0 2014-02-19 06:44:18.956
+!MESSAGE (Build 3.3.2.201302081546) [ERROR] com.aptana.git.core/debug C:\Users\Pavithra\Documents\portfolio\portfolio\.git\config (The system cannot find the file specified)
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Pavithra\Documents\portfolio\portfolio\.git\config (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.aptana.git.core.model.GitRepository.configContents(GitRepository.java:1289)
+	at com.aptana.git.core.model.GitRepository.remoteTrackingBranch(GitRepository.java:1227)
+	at com.aptana.git.core.model.GitRepository.matchingRemoteBranch(GitRepository.java:1178)
+	at com.aptana.git.core.model.GitRepository.commitsBehind(GitRepository.java:1205)
+	at com.aptana.git.ui.internal.GitLightweightDecorator.decorateProject(GitLightweightDecorator.java:258)
+	at com.aptana.git.ui.internal.GitLightweightDecorator.decorate(GitLightweightDecorator.java:123)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:81)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:347)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:370)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:330)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2014-02-20 21:33:40.235 -----------------------------------------------
+eclipse.buildId=3.3.2.201302081546
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.aptana.git.core 4 0 2014-02-20 21:34:18.490
+!MESSAGE (Build 3.3.2.201302081546) [ERROR] com.aptana.git.core/debug Error 2 : The system cannot find the file specified. : C:\Users\Pavithra\Documents\portfolio\portfolio\.git\refs\heads
+!STACK 0
+net.contentobjects.jnotify.win32.JNotifyException_win32: Error 2 : The system cannot find the file specified. : C:\Users\Pavithra\Documents\portfolio\portfolio\.git\refs\heads
+	at net.contentobjects.jnotify.win32.JNotify_win32.addWatch(JNotify_win32.java:77)
+	at net.contentobjects.jnotify.win32.JNotifyAdapterWin32.addWatch(JNotifyAdapterWin32.java:62)
+	at com.aptana.filewatcher.FileWatcher.addWatch(FileWatcher.java:65)
+	at com.aptana.git.core.model.GitRepository.<init>(GitRepository.java:398)
+	at com.aptana.git.core.model.GitRepositoryManager.getUnattachedExisting(GitRepositoryManager.java:194)
+	at com.aptana.git.core.model.GitRepositoryManager.getAttached(GitRepositoryManager.java:160)
+	at com.aptana.git.core.model.GitRepositoryManager.addListenerToEachRepository(GitRepositoryManager.java:272)
+	at com.aptana.git.core.GitPlugin$1.run(GitPlugin.java:78)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.aptana.git.core 4 0 2014-02-20 21:34:18.522
+!MESSAGE (Build 3.3.2.201302081546) [ERROR] com.aptana.git.core/debug C:\Users\Pavithra\Documents\portfolio\portfolio\.git\config (The system cannot find the file specified)
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Pavithra\Documents\portfolio\portfolio\.git\config (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.aptana.git.core.model.GitRepository.configContents(GitRepository.java:1289)
+	at com.aptana.git.core.model.GitRepository.remoteTrackingBranch(GitRepository.java:1227)
+	at com.aptana.git.core.model.GitRepository.matchingRemoteBranch(GitRepository.java:1178)
+	at com.aptana.git.core.model.GitRepository.commitsAhead(GitRepository.java:1159)
+	at com.aptana.git.ui.internal.GitLightweightDecorator.decorateProject(GitLightweightDecorator.java:249)
+	at com.aptana.git.ui.internal.GitLightweightDecorator.decorate(GitLightweightDecorator.java:123)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:81)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:347)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:370)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:330)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.aptana.git.core 4 0 2014-02-20 21:34:19.047
+!MESSAGE (Build 3.3.2.201302081546) [ERROR] com.aptana.git.core/debug C:\Users\Pavithra\Documents\portfolio\portfolio\.git\config (The system cannot find the file specified)
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Pavithra\Documents\portfolio\portfolio\.git\config (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.aptana.git.core.model.GitRepository.configContents(GitRepository.java:1289)
+	at com.aptana.git.core.model.GitRepository.remoteTrackingBranch(GitRepository.java:1227)
+	at com.aptana.git.core.model.GitRepository.matchingRemoteBranch(GitRepository.java:1178)
+	at com.aptana.git.core.model.GitRepository.commitsBehind(GitRepository.java:1205)
+	at com.aptana.git.ui.internal.GitLightweightDecorator.decorateProject(GitLightweightDecorator.java:258)
+	at com.aptana.git.ui.internal.GitLightweightDecorator.decorate(GitLightweightDecorator.java:123)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:81)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:347)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:370)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:330)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)

@@ -9,6 +9,7 @@
 <title>jQuery Parallax Plugin Demo</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 <script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="Framework/bootstrap/js/bootstrap.min.js"></script>
@@ -47,24 +48,44 @@ $(document).ready(function(){
 </head>
 
 <body>
-	<ul id="nav">
-		<li><a href="#intro" >Page 1</a></li>
-	    <li><a href="#second" >Page 2</a></li>
-	    <li><a href="#third" >Page 3</a></li>
-	    <li><a href="#fifth" >Page 4</a></li>
-	</ul>
+
+<script>
+$( document ).click(function() {
+  $( "#toggle" ).effect( "shake",  {times: 5}, "slow" );
+});
+</script>
+	  <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img id="logos" src="images/logo.jpg" width="100" height="100" />
+        </div>
+        <div class="navbar-collapse collapse">
+          
+          <ul id="nav" class="nav navbar-nav navbar-right">
+            <li><a href="#intro">About</a></li>
+            <li><a href="#second">Services</a></li>
+            <li><a href="#third">Team</a></li>
+            <li><a href="#fifth">Get In Touch</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+	
+	
 	
 	<div id="intro">
 		<div class="story">
-	    	<div class="float-left">
-			<h2>(Almost) Static Background</h2>
-	        <p>This section has a background that moves slightly slower than the user scrolls. This is achieved by changing the top position of the background for every pixel the page is scrolled.
-	        	<button type="button" class="btn btn-primary" data-complete-text="finished!" >...</button>
-<script>
-  $('.btn').button('complete')
-</script>
-	        	</p>
-	        </div>
+	    	<div id="message">We build Unique Experiences</div>
+	    	<div class="down">
+	    	<a href="#second"><img src="images/down.png"/></a>
+	    	</div>
 	    </div> <!--.story-->
 	</div> <!--#intro-->
 	
@@ -90,7 +111,11 @@ $(document).ready(function(){
 	
 	<div id="fifth">
 		<div class="story">
-		container that contains footer elements
+			<h1>Get In Touch</h1>
+				<h3>Contact us</h3>
+				<h4>Tilting Point works with the best developers in the world. If you’re one of them, start the conversation with us today.</h4>
+
+
 	    </div> <!--.story-->
 	</div> <!--#fifth-->
 
